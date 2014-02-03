@@ -31,7 +31,7 @@
         </switch>
     </target>
     <target name="convert" description="convertion">
-        <native2ascii src="${src.dir}" dest="${conv.dir}"
+        <native2ascii encoding="utf8" src="${src.dir}" dest="${conv.dir}"
    includes="**/*.${file.ext}" ext=".${file.ext}" />
         <antcall target="menu" />
     </target>
